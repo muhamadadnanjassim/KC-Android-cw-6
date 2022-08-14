@@ -1,4 +1,4 @@
-package com.example.class6;
+package com.example.cw6;
 
 import org.junit.Test;
 

@@ -1,54 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/www"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="300dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="7dp"
+        android:background="#EF0D0D"
+        android:text="Next Student"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/StudentImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/StudentName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269"
+        android:layout_width="241dp"
+        android:layout_height="196dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="447dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
+    <EditText
         android:id="@+id/StudentName"
-        android:layout_width="149dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="352dp"
-        android:text="اسم الطالب"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="303dp"
+        android:ems="10"
+        android:fontFamily="@font/alatsi"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="34sp" />
 
-    <TextView
+    <EditText
         android:id="@+id/StudentAge"
-        android:layout_width="149dp"
-        android:layout_height="63dp"
-        android:text="عمر الطالب"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="199dp"
+        android:ems="10"
+        android:fontFamily="@font/alatsi"
+        android:inputType="textPersonName"
+        android:text="Age"
+        android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="133dp"
-        android:layout_height="57dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StudentAge" />
+    <EditText
+        android:id="@+id/studentGrade"
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:fontFamily="@font/alatsi"
+        android:inputType="textPersonName"
+        android:text="Grade"
+        android:textSize="34sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

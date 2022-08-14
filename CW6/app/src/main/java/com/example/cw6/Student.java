@@ -1,6 +1,4 @@
-package com.example.class6;
-
-import android.widget.TextView;
+package com.example.cw6;
 
 public class Student {
 
@@ -14,10 +12,6 @@ public class Student {
         StudentAge = studentAge;
         StudentGrade = studentGrade;
         StudentImg = studentImg;
-    }
-
-    public Student(String yousef, int studentAge, int qwe) {
-
     }
 
     public String getStudentName() {
@@ -52,3 +46,4 @@ public class Student {
         StudentImg = studentImg;
     }
 }
+
